@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NeuroRad Trainer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <strong>NeuroRad Trainer</strong>
+  <label>Fall <select id="caseSel"></select></label>
+  <button id="prevCase" title="Vorheriger Fall">◀</button>
+  <button id="nextCase" title="Nächster Fall">▶</button>
+  <span id="status"></span>
+</header>
+<main>
+  <section id="viewerWrap">
+    <canvas id="view"></canvas>
+    <div id="hud">
+      <div id="hudSlice"></div>
+      <div id="hudWin"></div>
+      <div id="hudHU"></div>
+    </div>
+    <div id="orient-l">R</div><div id="orient-r">L</div>
+    <input id="sliceSlider" type="range" min="0" max="0" value="0" orient="vertical">
+  </section>
+  <aside>
+    <h3>Fenster</h3>
+    <div id="presets"></div>
+    <h3>Ansicht</h3>
+    <button id="reset">Zurücksetzen (R)</button>
+    <label class="dev"><input type="checkbox" id="showMask"> Referenzmaske (nur Prüfmodus)</label>
+    <h3>Bedienung</h3>
+    <ul class="help">
+      <li>Mausrad / ↑↓: Schicht</li>
+      <li>Strg + Mausrad: Zoom</li>
+      <li>Linke Maus ziehen: Verschieben</li>
+      <li>Rechte Maus ziehen: Fenster frei (↔ Breite, ↕ Zentrum)</li>
+      <li>1–4: Fenster-Presets</li>
+      <li>Bild↑/Bild↓: 5 Schichten</li>
+    </ul>
+  </aside>
+</main>
+<script src="viewer.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

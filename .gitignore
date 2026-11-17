@@ -1,0 +1,6 @@
+data/raw/
+data/cases/
+data/verify/
+data/*.sqlite
+__pycache__/
+.venv/

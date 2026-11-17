@@ -1,0 +1,9 @@
+numpy
+scipy
+pydicom
+pylibjpeg
+pylibjpeg-libjpeg
+nibabel
+pillow
+fastapi
+uvicorn

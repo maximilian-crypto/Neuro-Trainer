@@ -1,0 +1,9 @@
+{
+  "bhsd_ID_39bdd84b_ID_a318f304e4": {
+    "confounders": ["metal_artifact", "gantry_tilt"],
+    "note": "Metallartefakte bis >16000 HU, vermutlich Drainage/Clip"
+  },
+  "cq500_17": {
+    "note": "keine akute Blutung, aber erweiterte Ventrikel/alter Defekt"
+  }
+}
